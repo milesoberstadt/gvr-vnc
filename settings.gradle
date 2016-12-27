@@ -32,5 +32,7 @@ rootProject.children.each { outerDir ->
 // Remove the top-level modules which are empty and useless.
 rootProject.children.clear()
 
+// Explicitly add my app
+include ':app'
 // Add the subdirectories as top-level modules.
 rootProject.children.addAll(moduleList)
